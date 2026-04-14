@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   max-width: 420px;
   margin: 0 auto;
-  padding: 24px 16px 40px;
+  padding: 24px 16px 35px;
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1 {
 }
 
 .todo-input input {
-  background-color: cadetblue;
+  background-color: rgb(39, 99, 230);
   color: #dfe9f3;
   flex: 1;
   border: 1px solid #cfd8e3;
