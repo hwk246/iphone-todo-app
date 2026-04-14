@@ -27,6 +27,8 @@ h1 {
 }
 
 .todo-input input {
+  background-color: cadetblue;
+  color: #dfe9f3;
   flex: 1;
   border: 1px solid #cfd8e3;
   border-radius: 14px;
