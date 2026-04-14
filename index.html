@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
+  <title>Mijn Todo App</title>
+
+</head>
+<body>
+  <div class="app">
+    <h1>Mijn Todo App</h1>
+
+    <div class="todo-input">
+      <input id="taskInput" type="text" placeholder="Nieuwe taak..." />
+      <button id="addTaskBtn">Toevoegen</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+</body>
+</html>
