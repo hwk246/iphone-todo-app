@@ -44,18 +44,12 @@ function renderTasks() {
 
   tasks.forEach((task, index) => {
     const li = document.createElement("li");
+    const taskStateClass = task.done ? "task-text is-done" : "task-text";
     li.innerHTML = `
-      <span
-        onclick="toggleTask(${index})"
-        style="
-          text-decoration: ${task.done ? "line-through" : "none"};
-          opacity: ${task.done ? "0.5" : "1"};
-          cursor: pointer;
-        "
-      >
+      <button class="${taskStateClass}" onclick="toggleTask(${index})">
         ${task.text}
-      </span>
-      <button onclick="deleteTask(${index})">Verwijder</button>
+      </button>
+      <button class="delete-btn" onclick="deleteTask(${index})">Verwijder</button>
     `;
     taskList.appendChild(li);
   });

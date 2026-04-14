@@ -66,13 +66,90 @@ h1 {
 
 #taskList {
   margin: 0;
-  padding-left: 22px;
+  padding: 0;
+  list-style: none;
 }
 
 #taskList li {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
   margin-bottom: 12px;
-  padding: 14px 16px;
+}
+
+.task-text {
+  flex: 1;
+  border: none;
   border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+  text-align: left;
+  color: #111;
+  cursor: pointer;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.task-text.is-done {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 16px;
+  padding: 0 16px;
+  min-width: 108px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff7b72, #e11d48);
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.22);
+}
+
+.delete-btn:hover {
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
+}
+.task-text {
+  flex: 1;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font: inherit;
+  text-align: left;
+  color: #111;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.task-text.is-done {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 16px;
+  padding: 0 16px;
+  min-width: 108px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff7b72, #e11d48);
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.22);
+}
+
+.delete-btn:hover {
+  transform: translateY(-1px);
+}
+
+.delete-btn:active {
+  transform: translateY(0);
 }
